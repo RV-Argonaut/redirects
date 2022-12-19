@@ -2,6 +2,8 @@
 
 A simple project to handle URL redirects. 
 
+Links will be available at: [https://rv-argonaut.github.io/redirects/](https://rv-argonaut.github.io/redirects/)
+
 Based upon [https://github.com/brunoluiz/_](https://github.com/brunoluiz/_) updating the config.yml will result in creating redirects (instead of using tinyURL, etc ... )
 
 ## Process 
@@ -20,12 +22,16 @@ sudo dpkg -i urlzap_1.0.0_linux_amd64.deb
 
 Use a procedure to update links: 
 
-1. `git clone https://github.com/RV-Argonaut/redirects`
-1. `git checkout main` 
-1. Update the config.yml file
-1. `git add config.yml`
-1. `git commit -m 'chore: adds xxx site to redirects'`
-1. `git push -u origin main`
+#### Update Main Branch w/ Config only
+
+```
+git clone https://github.com/RV-Argonaut/redirects
+git checkout main
+nano config.yml ## or update method of choice
+git add config.yml
+git commit -m 'chore: adds xxx site to redirects'
+git push -u origin main
+```
 
 #### make gh-pages branch to be the same as main
 
@@ -48,4 +54,3 @@ git commit -m 'chore: update HTML files'
 git push -u origin gh-pages --force
 ```
 
-url-redirects
